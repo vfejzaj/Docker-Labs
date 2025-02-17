@@ -13,7 +13,7 @@ jobs:
       
     - name: build-image
       run: |
-        docker build -t appstellaracademy/html:latest .
+        docker build -t docker-labs/html:latest .
       working-directory: html
 
     - name: docker-login
@@ -22,5 +22,5 @@ jobs:
       
     - name: publish
       run: |
-        docker push appstellaracademy/html:latest
+        docker push docker-labs/html:latest
   
